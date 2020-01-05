@@ -27,5 +27,4 @@ dependencies {
 //    compile(project(':spring-expression'))
 //    compile(project(':spring-web'))
     compile 'javax.servlet:servlet-api:2.5'
-    compile 'org.projectlombok:lombok:1.18.6'
 }
