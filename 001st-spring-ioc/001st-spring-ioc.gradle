@@ -21,6 +21,5 @@ dependencies {
     compile(project(":spring-aop"))
     
     compileOnly 'org.projectlombok:lombok:1.18.2'
-
     apt "org.projectlombok:lombok:1.18.2"
 }
