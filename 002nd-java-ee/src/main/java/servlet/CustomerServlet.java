@@ -13,12 +13,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
 public class CustomerServlet extends HttpServlet {
-	private CustomerService customerService;
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
+		CustomerService customerService = new CustomerService();
 		try {
 			Map<String, String[]> parameterMap = request.getParameterMap();
 
