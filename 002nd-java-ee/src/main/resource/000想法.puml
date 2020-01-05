@@ -1,0 +1,22 @@
+@startuml
+abstract class HttpServlet
+class CustomerServlet
+CustomerServlet --up|> HttpServlet
+
+interface CustomerService
+CustomerServlet --right> CustomerService
+'成员变量
+class CustomerDao
+CustomerServiceImpl --right> CustomerDao
+
+class DBUtil
+CustomerDaoImpl --right> DBUtil
+
+class CustomerDaoImpl
+CustomerDaoImpl ..up|> CustomerDao
+class CustomerServiceImpl
+CustomerServiceImpl ..up|> CustomerService
+class MySqlUtil
+MySqlUtil  ..up|> DBUtil
+
+@enduml
