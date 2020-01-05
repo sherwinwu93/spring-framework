@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: 002nd-java-ee
-Automatic-Module-Name: 002nd.java.ee
-Implementation-Version: 5.0.16.BUILD-SNAPSHOT
-Created-By: 1.8.0_191 (Oracle Corporation)
-
